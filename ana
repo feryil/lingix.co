@@ -15,8 +15,23 @@ export default function LandingPage() {
           Try AI Speaking Demo <ArrowRight className="ml-2" />
         </Button>
       </header>
+<header className="text-center py-12">
+  <h1 className="text-4xl font-bold mb-4">Welcome to Lingix.co</h1>
+  <p className="text-xl text-gray-600 mb-6">
+    Learn English with AI — Anytime, Anywhere
+  </p>
+  <Button className="text-lg px-6 py-3 rounded-2xl shadow-md">
+    Try AI Speaking Demo <ArrowRight className="ml-2" />
+  </Button>
 
-      <section className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto my-12">
+  {/* AI Sesli Demo Player */}
+  <audio controls className="mx-auto mt-6">
+    <source src="/Lingix_AI_Demo.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</header>
+
+<section className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto my-12">
         <Card>
           <CardContent className="p-6">
             <h3 className="text-xl font-semibold mb-2">🎧 Speaking Practice</h3>
